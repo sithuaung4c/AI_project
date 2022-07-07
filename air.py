@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-
 with st.sidebar:
   selected = option_menu(None, ["Home", "Test",  "Contact"], 
     icons=['house', 'cloud-upload', "person-lines-fill"], 
@@ -40,9 +39,6 @@ elif selected == "Test":
     st.write('Output:')
     st.image('https://www.perkinselearning.org/sites/elearning.perkinsdev1.org/files/Amazon_1.png')
 
-
-
-
 elif selected == "Contact":
   st.markdown("""
     <div class="row">
@@ -58,7 +54,6 @@ elif selected == "Contact":
       </div>
     </div>
   </div>
-
   <div class="column">
     <div class="card">
       <img src="image.jpg">
